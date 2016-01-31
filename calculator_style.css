@@ -7,7 +7,7 @@ background {
 #calculator {
 	margin: auto;
 	background: grey;
-	height: 260px;
+	height: 290px;
 	width: 280px;
 
 }
@@ -113,6 +113,12 @@ background {
 	width: 40px;
 	height: 40px;
 	margin-left: 10px;
+	margin-top: 10px;
+}
+#knapp0 {
+	width: 40px;
+	height: 40px;
+	margin-left: 94px;
 	margin-top: 10px;
 }
 
