@@ -1,49 +1,23 @@
 
-function button1(){
-	document.getElementById("fr1").elements['ruta'].value=document.getElementById("fr1").elements['ruta'].value+"1";
+function button(x){
+	document.getElementById("fr1").elements['ruta'].value=document.getElementById("fr1").elements['ruta'].value+x;
 }
-function button2(){
-	document.getElementById("fr1").elements['ruta'].value=document.getElementById("fr1").elements['ruta'].value+"2";
+function clean(){
+	document.getElementById("fr1").elements['ruta'].value='';
 }
-function button3(){
-	document.getElementById("fr1").elements['ruta'].value=document.getElementById("fr1").elements['ruta'].value+"3";
-}
-function button4(){
-	document.getElementById("fr1").elements['ruta'].value=document.getElementById("fr1").elements['ruta'].value+"4";
-}
-function button5(){
-	document.getElementById("fr1").elements['ruta'].value=document.getElementById("fr1").elements['ruta'].value+"5";
-}
-function button6(){
-	document.getElementById("fr1").elements['ruta'].value=document.getElementById("fr1").elements['ruta'].value+"6";
-}
-function button7(){
-	document.getElementById("fr1").elements['ruta'].value=document.getElementById("fr1").elements['ruta'].value+"7";
-}
-function button8(){
-	document.getElementById("fr1").elements['ruta'].value=document.getElementById("fr1").elements['ruta'].value+"8";
-}
-function button9(){
-	document.getElementById("fr1").elements['ruta'].value=document.getElementById("fr1").elements['ruta'].value+"9";
-}
-function button0(){
-	document.getElementById("fr1").elements['ruta'].value=document.getElementById("fr1").elements['ruta'].value+"0";
-}
-function buttondiv(){
-	document.getElementById("fr1").elements['ruta'].value=document.getElementById("fr1").elements['ruta'].value+"/";
-}
-function buttonmulti(){
-	document.getElementById("fr1").elements['ruta'].value=document.getElementById("fr1").elements['ruta'].value+"*";
-	
-}
-function buttonadd(){
-	document.getElementById("fr1").elements['ruta'].value=document.getElementById("fr1").elements['ruta'].value+"+";
-	
-}
-function buttonsub(){
-	document.getElementById("fr1").elements['ruta'].value=document.getElementById("fr1").elements['ruta'].value+"-";
-}
-function input() {
+/*function calculation() {
+	var i;
 	var input = document.getElementById("fr1").elements['ruta'].value
-	document.getElementById("test").innerHTML = input;
-}
+	var tal1,tal2,sum;
+	for (i = 0; i < input.length; i++){
+		if (input.charAt(i)=="+"){
+			tal1 = input.substring(0,i);
+			tal2 = input.substring(i+1);
+		}
+		tal1=tal1.parseInt(tal1);
+		tal2=tal2.parseInt(tal2);
+		sum=tal1+tal2;
+		document.getElementById("test").innerHTML = sum;
+		
+	}
+}*/
