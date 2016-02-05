@@ -5,27 +5,63 @@ function clean(){
 	document.getElementById("fr1").elements['ruta'].value='';
 }
 function parser() {
-	var input=document.getElementById("fr1").elements['ruta'].value;
+	var input=document.getElementById("fr1").elements['ruta'].value;        //variabel deklarationer
         var tal=[];
         var operatorer=[];
         var length=input.length;
         input=input.toString();
+        var characters=["+", "-", "*", "/"];
         var start=0;
-        var sum=0;
+        var sum;
+        var thechar;
+        var lasttal;
+
         
-        for (var i=0; i<length; i++){
-            if (input.charAt(i)==='+'){
+        for (var i=0; i<length; i++){       //utagning av tal (OBS ej sista talet)
+            if (input.charAt(i)==='+' || input.charAt(i)==='-' || input.charAt(i)==='/' || input.charAt(i)==='*'){
                 tal.push(input.substring(start, i));
                 start=i+1;
             }
                 
         }
-        tal.push(input.substring(input.lastIndexOf("+")+1)) ;
-        var tal=tal.map(Number);
-     
-        for (i=0; i<tal.length; i++){
-            sum=sum+tal[i];
+        lasttal=Math.max(input.lastIndexOf("+"),input.lastIndexOf("-"),input.lastIndexOf("*"),input.lastIndexOf("/"));
+        
+        tal.push(input.substring(lasttal+1)) ;       //utagning av sista talet
+        var tal=tal.map(Number);        //converterar talen till ints
+
+        for (i=0; i<length; i++){       //utagning av operatorer
+            thechar=input.charAt(i);
+            if (characters.indexOf(thechar) !==-1){
+                operatorer.push(thechar);
+            }
+        }
+
+        sum=tal[0];                                  //beräknar
+        for (i=0; i<=tal.length-2; i++){
+
+            switch (operatorer[i]){
+                case '+':
+                    sum=sum+tal[i+1];
+                    break;
+                case '-':
+                    sum=sum-tal[i+1];
+
+                    break;
+                case '*':
+                    sum=sum*tal[i+1];
+                    break;
+                case '/':
+                    sum=sum/tal[i+1];
+                    break;
+                default :
+                    alert("hej");
+                    break;
+            }
+        }
+        if (sum===666){                                     //easteregg
+            window.location = "http://www.webbteknik.caesax.se/johannes/dance/dance.html";
         }
         document.getElementById("fr1").elements['ruta'].value=sum;
-}
+    }
+
 
