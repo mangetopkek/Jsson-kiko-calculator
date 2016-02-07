@@ -42,13 +42,13 @@ function parser() {
             switch (operatorer[i]){
                 case '*':
                     tal[i]=tal[i]*tal[i+1];
-                    tal[i+1]=null;
-                    operatorer[i]=null;
+                    tal.splice(i+1, 1);
+                    operatorer.splice(i ,1);
                     break;
                 case '/':
                     tal[i]=tal[i]/tal[i+1];
-                    tal[i+1]=null;
-                    operatorer[i]=null;
+                    tal.splice(i+1, 1);
+                    operatorer.splice(i, 1);
                     break;
                 default :
                     break;
@@ -82,4 +82,3 @@ function parser() {
         }
         document.getElementById("fr1").elements['ruta'].value=sum;
     }
-
