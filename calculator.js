@@ -36,8 +36,28 @@ function parser() {
             }
         }
 
-        sum=tal[0];                                  //beräknar
-        for (i=0; i<=tal.length-2; i++){
+  
+        
+        for (i=0; i<=operatorer.length; i++){       //beräknar division och multiplikation först
+            switch (operatorer[i]){
+                case '*':
+                    tal[i]=tal[i]*tal[i+1];
+                    tal[i+1]=null;
+                    operatorer[i]=null;
+                    break;
+                case '/':
+                    tal[i]=tal[i]/tal[i+1];
+                    tal[i+1]=null;
+                    operatorer[i]=null;
+                    break;
+                default :
+                    break;
+            }
+        }
+        
+        sum=tal[0];  //initialiserar var sum
+        
+        for (i=0; i<=tal.length-2; i++){  //beräknar
 
             switch (operatorer[i]){
                 case '+':
@@ -54,7 +74,6 @@ function parser() {
                     sum=sum/tal[i+1];
                     break;
                 default :
-                    alert("hej");
                     break;
             }
         }
@@ -63,5 +82,4 @@ function parser() {
         }
         document.getElementById("fr1").elements['ruta'].value=sum;
     }
-
 
