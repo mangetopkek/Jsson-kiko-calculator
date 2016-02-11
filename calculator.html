@@ -9,34 +9,34 @@
   
   
   <body>
-  <h1 id="test">Miniräknare</h1>
+  <h1 id="test">Jsson and Kikos Calculator</h1>
     <div id="calculator">
 		<form action="form_action.asp" id="fr1">
           <input type="text" id="ruta">
           </form>
 		  
-        <button id="knappdiv" onclick="button('/')">/</button>
-        <button id="knappmult" onclick="button('*')">*</button>
-        <button id="knappadd" onclick="button('+')">+</button>
-        <button id="knappsub" onclick="button('-')">-</button></br>
+        <button id="knappdiv" class="knappar ops lefties"  onclick="button('/')">/</button>
+        <button id="knappmult" class="knappar ops"  onclick="button('*')">*</button>
+        <button id="knappadd" class="knappar ops"  onclick="button('+')">+</button>
+        <button id="knappsub" class="knappar ops"  onclick="button('-')">-</button></br>
         
-        <button id="knapp7" onclick="button('7')">7</button>
-        <button id="knapp8" onclick="button('8')">8</button>
-        <button id="knapp9" onclick="button('9')">9</button>
-		  <button id="knapppunkt" onclick="button('.')">.</button></br>
+        <button id="knapp7" class="knappar lefties" onclick="button('7')">7</button>
+        <button id="knapp8" class="knappar" onclick="button('8')">8</button>
+        <button id="knapp9" class="knappar" onclick="button('9')">9</button>
+		  <button id="knapppunkt" class="knappar" onclick="button('.')">.</button></br>
 		
-        <button id="knapp4" onclick="button('4')">4</button>
-        <button id="knapp5" onclick="button('5')">5</button>
-        <button id="knapp6" onclick="button('6')">6</button>
+        <button id="knapp4" class="knappar lefties" onclick="button('4')">4</button>
+        <button id="knapp5" class="knappar" onclick="button('5')">5</button>
+        <button id="knapp6" class="knappar" onclick="button('6')">6</button>
 		
-     <button  id="knappeq" onclick="parser()">=</button></br>
+     <button  id="knappeq" class="knappar" onclick="parser()">=</button></br>
         
-        <button id="knapp1" onclick="button('1')">1</button>
-        <button id="knapp2" onclick="button('2')">2</button>
-        <button id="knapp3" onclick="button('3')">3</button>
+        <button id="knapp1" class="knappar lefties" onclick="button('1')">1</button>
+        <button id="knapp2" class="knappar" onclick="button('2')">2</button>
+        <button id="knapp3" class="knappar" onclick="button('3')">3</button>
         
-		  <button id="knappc" onclick="clean()">C</button>
-		  <button id="knapp0" onclick="button('0')">0</button>
+		  <button id="knappc" class="knappar" onclick="clean()">C</button>
+		  <button id="knapp0" class="knappar" onclick="button('0')">0</button>
         
     </div>
     
