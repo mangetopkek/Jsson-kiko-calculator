@@ -7,121 +7,40 @@ background {
 #calculator {
 	margin: auto;
 	background: grey;
-	height: 290px;
+	height: 310px;
 	width: 280px;
-
+	border: 4px groove white;
+	border-radius: 25px;
 }
 #calculator form {
 	text-align: center;
-
 }
-#knappdiv {
-	margin-top: 20px;
-	width: 40px;
-	height: 40px;
-	margin-left: 40px;
-	
-}
-#knappmult {
-	margin-top: 20px;
-	width: 40px;
-	height: 40px;
-	margin-left: 10px;
-
-}
-#knappadd {
-	margin-top: 20px;
-	width: 40px;
-	height: 40px;
-	margin-left: 10px;
-}
-#knappsub{
-	margin-top: 20px;
-	width: 40px;
-	height: 40px;
-	margin-left: 10px;
-}
-#knapp9 {
-	width: 40px;
-	height: 40px;
-	margin-left: 10px;
-	margin-top: 10px;
-	
-}
-#knapp8 {
-	width: 40px;
-	height: 40px;
-	margin-left: 10px;
-	margin-top: 10px;
-}
-#knapp7 {
-	width: 40px;
-	height: 40px;
-	margin-left: 40px;
-	margin-top: 10px;
-}
-#knapp6 {
-	width: 40px;
-	height: 40px;
-	margin-left: 10px;
-	margin-top: 10px;
-}
-#knapp5 {
-	width: 40px;
-	height: 40px;
-	margin-left: 10px;
-	margin-top: 10px;
-}
-#knapp4 {
-	width: 40px;
-	height: 40px;
-	margin-left: 40px;
-	margin-top: 10px;
-}
-#knapp3 {
-	width: 40px;
-	height: 40px;
-	margin-left: 10px;
-	margin-top: 10px;
-
-}
-#knapp2 {
-	width: 40px;
-	height: 40px;
-	margin-left: 10px;
-	margin-top: 10px;
-}
-#knapp1 {
-	width: 40px;
-	height: 40px;
-	margin-left: 40px;
-	margin-top: 10px;
-}
-#knappeq {
-	width: 40px;
-	height: 40px;
-	margin-left: 10px;
-	margin-top: 10px;
-}
-#knapppunkt {
-	width: 40px;
-	height: 40px;
-	margin-left: 10px;
-	margin-top: 10px;
-}
-#knappc {
-	width: 40px;
-	height: 40px;
-	margin-left: 10px;
-	margin-top: 10px;
+#ruta{
+	margin-top: 15px;
 }
 #knapp0 {
+	margin-left: 94px;
+}
+body{
+	background-image: url("stardust.png");
+	background-color: #020024;
+}
+.knappar{
 	width: 40px;
 	height: 40px;
-	margin-left: 94px;
+	margin-left: 10px;
 	margin-top: 10px;
+	border-radius: 10px;
 }
-
-
+.ops{
+	margin-top: 20px;
+}
+.lefties{
+	margin-left: 40px;
+}
+h1{
+	font-family: Segoe UI Light, Segoe UI,Calibri light, Calibri;
+	color: white;
+}
 
 
