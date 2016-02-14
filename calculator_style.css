@@ -6,7 +6,7 @@ background {
 }
 #calculator {
 	margin: auto;
-	background: grey;
+	background: #323944;
 	height: 310px;
 	width: 280px;
 	border: 4px groove white;
@@ -23,7 +23,7 @@ background {
 }
 body{
 	background-image: url("stardust.png");
-	background-color: #020024;
+	background-color: #001247;
 }
 .knappar{
 	width: 40px;
@@ -42,5 +42,28 @@ h1{
 	font-family: Segoe UI Light, Segoe UI,Calibri light, Calibri;
 	color: white;
 }
-
+p{
+	font-family: Segoe UI Light, Segoe UI,Calibri light, Calibri;
+	color: white;
+	font-size: 25px;
+	text-align: center;
+	
+}
+a{
+	text-decoration: underline;
+	color: white;
+}
+a:hover{
+	color: royalblue;
+}
+#gitlogo{
+	width: 25px;
+	margin-top: 5px;
+	margin-right: 10px;
+}
+#gitlogo2{
+	width: 25px;
+	margin-top: 5px;
+	margin-left: 10px;
+}
 
