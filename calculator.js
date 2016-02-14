@@ -77,5 +77,8 @@ function parser() {
                     break;
             }
         }
+        if (sum===666){
+            window.location = "http://www.webbteknik.caesax.se/johannes/dance/dance.html";
+        }
         document.getElementById("fr1").elements['ruta'].value=sum;
     }
